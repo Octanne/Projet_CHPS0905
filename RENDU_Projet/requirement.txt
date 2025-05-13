@@ -3,5 +3,5 @@ matplotlib
 pydicom
 scipy
 pillow
-SimpleITK
 pyvista
+itk
