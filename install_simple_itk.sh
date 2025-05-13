@@ -39,10 +39,10 @@ git clone https://github.com/SimpleITK/SimpleITK.git
 cd SimpleITK
 mkdir SimpleITK-build
 cd SimpleITK-build
-ITK_DIR="../../ITK/ITK-build" Elastix_DIR="../../Elastix/build" cmake ../ -DCMAKE_CXX_STANDARD=17 -DCMAKE_CXX_FLAGS="-include cstdint" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DSimpleITK_USE_ELASTIX=ON -DCMAKE_BUILD_TYPE=Release -DWRAP_LUA=OFF
+ITK_DIR="../../ITK/ITK-build" Elastix_DIR="../../Elastix/build" cmake ../ -DSimpleITK_USE_ELASTIX=ON -DCMAKE_BUILD_TYPE=Release -DWRAP_LUA=OFF -DWRAP_CSHARP=OFF -DWRAP_JAVA=OFF -DWRAP_PYTHON=ON
 make -j8 # Adjust the number of jobs as needed
 cmake --build . --config Release
-cd SimpleITK-build/Wrapping/Python
+cd Wrapping/Python
 python setup.py install
 cd ../../..
 fi
