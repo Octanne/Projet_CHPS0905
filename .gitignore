@@ -1,3 +1,4 @@
 SimpleITK/
 ITK/
 Elastix/
+.venv/
