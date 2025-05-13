@@ -1,0 +1,7 @@
+numpy
+matplotlib
+pydicom
+scipy
+pillow
+SimpleITK
+pyvista
