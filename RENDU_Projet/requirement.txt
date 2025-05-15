@@ -4,4 +4,6 @@ pydicom
 scipy
 pillow
 pyvista
-itk
+simpleitk
+SimpleITK-SimpleElastix
+PCA

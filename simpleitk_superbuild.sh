@@ -9,7 +9,7 @@ python -m pip install --upgrade wheel
 python -m pip install -r RENDU_Projet/requirement.txt
 
 # Compilation manuelle de SimpleITK
-if [[ ! -d "SimpleITK" ]]; then
+#if [[ ! -d "SimpleITK" ]]; then
 git clone https://github.com/SimpleITK/SimpleITK.git
 cd SimpleITK
 mkdir SimpleITK-build
@@ -27,4 +27,4 @@ cmake ../SuperBuild \
 make -j$(8)
 make -C SimpleITK-build dist
 #pip install SimpleITK-build/Wrapping/Python
-fi
+#fi

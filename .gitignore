@@ -2,3 +2,5 @@ SimpleITK/
 ITK/
 Elastix/
 .venv/
+
+**/*.nii.gz

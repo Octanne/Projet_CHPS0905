@@ -1,4 +1,4 @@
-#!/home/noxii/CHPS0905/Projet_CHPS0905/.venv/bin/python
+#!/home/noxii/CHPS0905/Projet_CHPS0905/.venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

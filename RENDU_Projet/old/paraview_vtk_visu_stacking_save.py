@@ -52,7 +52,7 @@ SetActiveView(renderView1)
 # ----------------------------------------------------------------
 
 # create a new 'Legacy VTK Reader'
-sag_GREvtk = LegacyVTKReader(registrationName='Sag_GRE.vtk', FileNames=['/home/corentin/Documents/Cours/M2/CHPS0905/Projet2025/VTK_Files/Sag_GRE.vtk'])
+sag_GREvtk = LegacyVTKReader(registrationName='Sag_GRE.vtk', FileNames=['C:\\Users\\Utilisateur\\Documents\\CHPS0905\\Projet\\Projet_CHPS0905\\Projet2025\\VTK_Files\\Sag_GRE.vtk'])
 
 # create a new 'Transform'
 transform1 = Transform(registrationName='Transform1', Input=sag_GREvtk)
@@ -69,16 +69,16 @@ resampleToImage1.SamplingDimensions = [350, 350, 350]
 resampleToImage1.SamplingBounds = [-63.5, 63.5, -63.5, 63.5, -63.5, 63.5]
 
 # create a new 'XML Unstructured Grid Reader'
-stokesvtu = XMLUnstructuredGridReader(registrationName='Stokes.vtu', FileName=['/home/corentin/Documents/Cours/M2/CHPS0905/Projet2025/VTK_Files/Stokes.vtu'])
+stokesvtu = XMLUnstructuredGridReader(registrationName='Stokes.vtu', FileName=['C:\\Users\\Utilisateur\\Documents\\CHPS0905\\Projet\\Projet_CHPS0905\\Projet2025\\VTK_Files\\Stokes.vtu'])
 stokesvtu.CellArrayStatus = ['Label']
 stokesvtu.PointArrayStatus = ['Velocity', 'Pressure']
 stokesvtu.TimeArray = 'None'
 
 # create a new 'Legacy VTK Reader'
-ax_3DTOFvtk = LegacyVTKReader(registrationName='Ax_3DTOF.vtk', FileNames=['/home/corentin/Documents/Cours/M2/CHPS0905/Projet2025/VTK_Files/Ax_3DTOF.vtk'])
+ax_3DTOFvtk = LegacyVTKReader(registrationName='Ax_3DTOF.vtk', FileNames=['C:\\Users\\Utilisateur\\Documents\\CHPS0905\\Projet\\Projet_CHPS0905\\Projet2025\\VTK_Files\\Ax_3DTOF.vtk'])
 
 # create a new 'Legacy VTK Reader'
-sag_Fluxvtk = LegacyVTKReader(registrationName='Sag_Flux.vtk', FileNames=['/home/corentin/Documents/Cours/M2/CHPS0905/Projet2025/VTK_Files/Sag_Flux.vtk'])
+sag_Fluxvtk = LegacyVTKReader(registrationName='Sag_Flux.vtk', FileNames=['C:\\Users\\Utilisateur\\Documents\\CHPS0905\\Projet\\Projet_CHPS0905\\Projet2025\\VTK_Files\\Sag_Flux.vtk'])
 
 # create a new 'Transform'
 transform4 = Transform(registrationName='Transform4', Input=sag_Fluxvtk)
